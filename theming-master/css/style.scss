@@ -1,0 +1,277 @@
+@import "./theme.scss";
+
+nav{
+  display:none;
+
+}
+
+.Intro-Section {
+  background-color: $background-grey;
+  .head-image {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 1rem;
+    img {
+      width: 7rem;
+    }
+  }
+  h1,
+  p,
+  label {
+    color: $white;
+  }
+  p {
+    margin-top: 2rem;
+    text-align: center;
+    font-family: BoldFont;
+  }
+}
+
+.benefit-section {
+  padding-bottom: 1rem;
+  background-color: $background-light-grey;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  .card {
+    margin-bottom: 1rem;
+    background-color: $white;
+    padding: 1rem;
+    width: 70%;
+    height: 19rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    .img-div {
+      width: 6rem;
+      height: 6rem;
+    }
+    p {
+      text-align: center;
+    }
+  }
+}
+
+.story {
+  .flex-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .img-div {
+      width: 80%;
+    }
+    p {
+      margin-top: 1rem;
+    }
+  }
+}
+
+.green-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $pistacio;
+  h4 {
+    color: $white;
+  }
+  .img-div {
+    width: 12rem;
+    margin-top: 2rem;
+  }
+}
+.video-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  video{
+    width:100%;
+    margin-bottom: 1rem;
+  }
+  p {
+    font-family: LightFont;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+}
+
+.claim {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h3 {
+    color: $white;
+  }
+  p {
+    font-family: LightFont;
+    margin-top: 0rem;
+    margin-bottom: 1rem;
+  }
+  button {
+    margin-bottom: 0rem;
+  }
+}
+.more-details {
+  padding-top: 0rem;
+
+  h3 {
+    margin-bottom: 1.5rem;
+  }
+  .detail {
+    display: flex;
+    flex-direction: row;
+    h5 {
+      margin-top: 0.7rem;
+      margin-bottom: 0.5rem;
+      text-align: left;
+    }
+    .img-div {
+      width: 12rem;
+      img {
+        width: 2.5rem;
+        height: 2.3rem;
+      }
+    }
+  }
+}
+
+.footer {
+  background-color: $white;
+  p {
+    color: $text-color;
+  }
+}
+@media only screen and (min-width: $breakpoint-tablet) {
+  .Intro-Section {
+    .flex-div {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      div {
+        width: 45%;
+      }
+    }
+  }
+  .benefit-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 2rem;
+    width: 100%;
+    .card {
+      width: 32%;
+      height: 20rem;
+      p {
+        font-size: 1rem;
+      }
+    }
+  }
+  .more-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h3 {
+      margin-bottom: 2rem;
+    }
+
+    .detail {
+      margin-top: 3rem;
+      h5 {
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        text-align: left;
+      }
+      .img-div {
+        width: 5rem;
+        img {
+          width: 2.2rem;
+          height: 2rem;
+        }
+      }
+    }
+  }
+
+  .story {
+    .flex-div {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      .img-div {
+        width: 50%;
+        margin-right: 1rem;
+      }
+      div {
+        width: 70%;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: $breakpoint-tablet) {
+  .Intro-Section {
+    .flex-div {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      div {
+        width: 45%;
+      }
+    }
+  }
+  .benefit-section {
+    padding-bottom: 4rem;
+  }
+  .story {
+    .flex-div {
+      display: flex;
+      flex-direction: row;
+      .img-div {
+        width: 30%;
+        margin-right: 1rem;
+      }
+      div {
+        width: 60%;
+      }
+    }
+  }
+  nav{
+    padding:1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    ul{
+      display:flex;
+      flex-direction:row;
+      li{
+        margin:0rem 1rem;
+        font-family: BoldFont;
+        cursor:pointer;
+      }
+      li:hover{
+        color:$pistacio;
+  
+      }
+    }
+  }
+  .video-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    video{
+      width:60%;
+      height: 30rem;
+    }
+    p {
+      font-family: LightFont;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+  }
+  
+  
+}
